@@ -59,7 +59,7 @@ rl.question('Your choice: ', (choice) => {
 	if (userchoicex == ai) {
 		console.log("NO WINNER!")
 		console.log('HMAC key:', key);  
-	} else if (rightmoves.includes((userchoicex - ai) % 5)) {
+	} else if (rightmoves.includes((userchoicex - ai) % originalArray.length)) {
 		console.log("You win. AI choosed", originalArray[ai])
 		console.log('HMAC key:', key);  
 	} else { 
